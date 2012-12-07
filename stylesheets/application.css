@@ -60,24 +60,19 @@ table {
 .clearfix {
   *zoom: 1; }
 
+html, body {
+  min-height: 100%; }
+
 body {
+  background: #141414;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   font-weight: 300;
   -webkit-font-smoothing: antialiased; }
 
 section.top {
-  background: #3c3c3c;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/space1.jpg");
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/space1.jpg");
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/space1.jpg");
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/space1.jpg");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/space1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 30vh; }
   section.top article {
     background: rgba(0, 0, 0, 0.3);
     border: 10px solid rgba(220, 220, 220, 0.7);
