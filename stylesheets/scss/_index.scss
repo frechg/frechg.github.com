@@ -1,0 +1,54 @@
+section.welcome {
+  padding: 30vh 0px;
+  text-align: center;
+
+  > header {
+    @include inline-block;
+    @include box-sizing(border-box);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  div.title {
+    @extend .title-fade-in-animation;
+    @include inline-block;
+    margin-bottom: 30px;
+    position: relative;
+
+    span {
+      @extend .title-animation;
+      font: bold 1.6em/1.2em $sans-serif;
+      letter-spacing: 3px;
+      margin-right: 10px;
+      position: relative;
+      text-transform: uppercase;
+
+      &:nth-child(1) {
+        @include animation-delay(0.5s);
+      }
+
+      &:nth-child(2) {
+        @include animation-delay(1.0s);
+      }
+
+      &:nth-child(3) {
+        @include animation-delay(1.5s);
+      }
+
+      &:nth-child(4) {
+        @include animation-delay(2s);
+        margin-right: 0px;
+      }
+    }
+  }
+
+  article.intro {
+    @extend .intro-fade-in-animation;
+    @include box-sizing(border-box);
+    color: rgb(160,160,160);
+    line-height: 2em;
+    margin: 0 auto;
+    text-align: center;
+    width: grid-width(7) + ($gw-gutter * 2);
+  }
+}

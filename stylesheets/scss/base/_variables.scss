@@ -12,4 +12,4 @@ $fg-gutter: $gw-gutter;
 $fg-max-columns: 12;
 
 $sans-serif: 'Lato', $helvetica;
-$serif: 'Playfair Display', 'Time New Roman', $georgia;
+$serif: $georgia, 'Time New Roman', 'Playfair Display';
