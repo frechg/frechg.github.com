@@ -28,15 +28,15 @@ section.welcome {
       }
 
       &:nth-child(2) {
-        @include animation-delay(1.0s);
+        @include animation-delay(1.3s);
       }
 
       &:nth-child(3) {
-        @include animation-delay(1.5s);
+        @include animation-delay(2.1s);
       }
 
       &:nth-child(4) {
-        @include animation-delay(2s);
+        @include animation-delay(2.8s);
         margin-right: 0px;
       }
     }

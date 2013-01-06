@@ -12,13 +12,6 @@
 @mixin title-keyframes {
   0% {
     opacity: 0;
-    //top: 3px;
-  }
-  20% {
-    //top: -1px;
-  }
-  55% {
-    //top: 0px;
   }
   100% {
     opacity: 1;
@@ -43,9 +36,9 @@
 @mixin title-fade-in-keyframes {
   0% {
     opacity: 0;
-    @include transform(scale(0.98));
+    @include transform(scale(0.97));
   }
-  40% {
+  50% {
     @include transform(scale(1));
   }
   100% {
@@ -66,17 +59,15 @@
 .intro-fade-in-animation {
   @include animation(intro-fade-in 2s ease-in-out);
   @include animation-fill-mode(both);
-  @include animation-delay(3s);
+  @include animation-delay(3.5s);
 }
 
 @mixin intro-fade-in-keyframes {
   0% {
     opacity: 0;
-    //padding-left: grid-width(1);
   }
   100% {
     opacity: 1;
-    //padding-left: grid-width(3);
   }
 }
 

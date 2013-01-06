@@ -56,13 +56,19 @@ section.gallery {
       padding: 1px;
       width: grid-width(10);
 
+      video {
+        display: block;
+        width: 100%;
+      }
+
       a {
         background: rgb(240,240,240);
+        border: 0px;
         display: block;
-        height: 500px;
+        padding: 0px;
 
         img {
-          display: none;
+          display: block;
           min-width: 100%;
           max-width: 100%;
           margin: 0px;

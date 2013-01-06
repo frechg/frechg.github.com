@@ -19,7 +19,7 @@ h1 {
 
 p {
   font: 300 1.2em/1.5em $sans-serif;
-  color: rgb(160,160,160);
+  color: rgb(140,140,140);
 
   a {
     font: 300 1em/1.5em $sans-serif;
@@ -34,13 +34,12 @@ a {
   border-bottom: 1px dotted transparent;
   color: rgb(82, 154, 231);
   font: 300 1.2em/1.5em $sans-serif;
-  //letter-spacing: 1px;
   padding-bottom: 2px;
   text-decoration: none;
   @include transition(all, 0.15s, linear);
 
   &:hover {
-    border-color: darken(rgb(82, 154, 231), 20%);
+    border-color: rgb(82, 154, 231);
     color: darken(rgb(82, 154, 231), 20%);
   }
 }
