@@ -1,12 +1,59 @@
-header.portfolio {
+section.intro {
+  background-color: rgb(250,250,250);
+  border-bottom: 1px solid rgb(230,230,230);
+  @include box-sizing(border-box);
+  padding: 30vh 0px 0px;
+  height: 80vh;
+
+  article {
+    @include outer-container;
+
+    div.avatar {
+      background: url('/images/avatar.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      @include inline-block;
+      height: 130px;
+      margin-right: 20px;
+      width: 130px;
+      vertical-align: middle;
+    }
+
+    hgroup {
+      @include inline-block;
+      vertical-align: middle;
+
+      h1 {
+        font-size: 2.6em;
+        letter-spacing: 2px;
+        margin: 0;
+      }
+
+      h2 {
+        color: $light-font-color;
+        font: italic 1.2em/1.4em $serif;
+        letter-spacing: 1px;
+        margin-left: 2px;
+        //text-transform: lowercase;
+      }
+    }
+  }
+}
+
+header.global {
   border-bottom: 1px solid rgb(0,0,0);
   background: rgba(0,0,0, 0.8);
+  //display: none;
   @include clearfix;
   padding: 12px 20px 10px;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  left: 0px;
+
+  &.stuck {
+    left: 0px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+  }
 
   a {
     color: rgb(90,90,90);
@@ -36,17 +83,18 @@ header.portfolio {
 }
 
 section.gallery {
+  @include outer-container;
   margin: 0 auto;
   padding: 140px 0px;
-  width: grid-width(10);
 
   article {
     margin-bottom: 140px;
 
     figcaption {
-      margin: 0 0 60px $gw-gutter * 2;
-      //text-align: center;
-      width: grid-width(7);
+      @include span-columns(7);
+      @include shift(1);
+      float: none;
+      margin-bottom: 60px;
     }
 
     div.image {
@@ -54,7 +102,6 @@ section.gallery {
       @include box-sizing(border-box);
       margin-bottom: 80px;
       padding: 1px;
-      width: grid-width(10);
 
       video {
         display: block;
