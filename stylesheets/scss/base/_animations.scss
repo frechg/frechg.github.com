@@ -76,3 +76,87 @@
     @-ms-keyframes intro-fade-in { @include intro-fade-in-keyframes; }
      @-o-keyframes intro-fade-in { @include intro-fade-in-keyframes; }
         @keyframes intro-fade-in { @include intro-fade-in-keyframes; }
+
+//
+///////////////////////////////////////////////////////////////////////////////////
+
+%avatar-animation {
+  @include animation(avatar 2s ease-in-out);
+  @include animation-fill-mode(both);
+}
+
+@mixin avatar-keyframes {
+  0% {
+    opacity: 0;
+    right: -100px
+  }
+  70% {
+    right: 0px
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes avatar { @include avatar-keyframes; }
+   @-moz-keyframes avatar { @include avatar-keyframes; }
+    @-ms-keyframes avatar { @include avatar-keyframes; }
+     @-o-keyframes avatar { @include avatar-keyframes; }
+        @keyframes avatar { @include avatar-keyframes; }
+
+
+//
+///////////////////////////////////////////////////////////////////////////////////
+
+%title-down-animation {
+  @include animation(title-down 1s ease-in-out);
+  @include animation-fill-mode(both);
+  @include animation-delay(0.25s);
+}
+
+@mixin title-down-keyframes {
+  0% {
+    opacity: 0;
+    top: -20px
+  }
+  70% {
+    top: 0px
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes title-down { @include title-down-keyframes; }
+   @-moz-keyframes title-down { @include title-down-keyframes; }
+    @-ms-keyframes title-down { @include title-down-keyframes; }
+     @-o-keyframes title-down { @include title-down-keyframes; }
+        @keyframes title-down { @include title-down-keyframes; }
+
+//
+///////////////////////////////////////////////////////////////////////////////////
+
+%title-animation {
+  @include animation(title 1s ease-in-out);
+  @include animation-fill-mode(both);
+  @include animation-delay(0.25s);
+}
+
+@mixin title-keyframes {
+  0% {
+    opacity: 0;
+    left: -20px
+  }
+  70% {
+    left: 0px
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes title { @include title-keyframes; }
+   @-moz-keyframes title { @include title-keyframes; }
+    @-ms-keyframes title { @include title-keyframes; }
+     @-o-keyframes title { @include title-keyframes; }
+        @keyframes title { @include title-keyframes; }

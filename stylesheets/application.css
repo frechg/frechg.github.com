@@ -257,6 +257,182 @@ table {
   100% {
     opacity: 1; } }
 
+@-webkit-keyframes avatar {
+  0% {
+    opacity: 0;
+    right: -100px; }
+
+  70% {
+    right: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes avatar {
+  0% {
+    opacity: 0;
+    right: -100px; }
+
+  70% {
+    right: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@-ms-keyframes avatar {
+  0% {
+    opacity: 0;
+    right: -100px; }
+
+  70% {
+    right: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes avatar {
+  0% {
+    opacity: 0;
+    right: -100px; }
+
+  70% {
+    right: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes avatar {
+  0% {
+    opacity: 0;
+    right: -100px; }
+
+  70% {
+    right: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes title-down {
+  0% {
+    opacity: 0;
+    top: -20px; }
+
+  70% {
+    top: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes title-down {
+  0% {
+    opacity: 0;
+    top: -20px; }
+
+  70% {
+    top: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@-ms-keyframes title-down {
+  0% {
+    opacity: 0;
+    top: -20px; }
+
+  70% {
+    top: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes title-down {
+  0% {
+    opacity: 0;
+    top: -20px; }
+
+  70% {
+    top: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes title-down {
+  0% {
+    opacity: 0;
+    top: -20px; }
+
+  70% {
+    top: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+section.intro article hgroup {
+  -webkit-animation: title 1s ease-in-out;
+  -moz-animation: title 1s ease-in-out;
+  animation: title 1s ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  animation-delay: 0.25s; }
+
+@-webkit-keyframes title {
+  0% {
+    opacity: 0;
+    left: -20px; }
+
+  70% {
+    left: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes title {
+  0% {
+    opacity: 0;
+    left: -20px; }
+
+  70% {
+    left: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@-ms-keyframes title {
+  0% {
+    opacity: 0;
+    left: -20px; }
+
+  70% {
+    left: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes title {
+  0% {
+    opacity: 0;
+    left: -20px; }
+
+  70% {
+    left: 0px; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes title {
+  0% {
+    opacity: 0;
+    left: -20px; }
+
+  70% {
+    left: 0px; }
+
+  100% {
+    opacity: 1; } }
+
 html, body {
   min-height: 100%; }
 
@@ -359,7 +535,7 @@ section.intro {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 30vh 0px 0px;
-  height: 80vh; }
+  height: 100vh; }
   section.intro article {
     zoom: 1;
     max-width: 780px;
@@ -370,6 +546,9 @@ section.intro {
       display: table; }
     section.intro article:after {
       clear: both; }
+    @media screen and (max-width: 768px) {
+      section.intro article {
+        text-align: center; } }
     section.intro article div.avatar {
       background: url("/images/avatar.jpg");
       background-size: 100% 100%;
@@ -380,26 +559,78 @@ section.intro {
       zoom: 1;
       *display: inline;
       *vertical-align: auto;
-      height: 130px;
+      height: 160px;
       margin-right: 20px;
-      width: 130px;
-      vertical-align: middle; }
+      position: relative;
+      width: 160px;
+      vertical-align: middle;
+      z-index: 2; }
+      @media screen and (max-width: 768px) {
+        section.intro article div.avatar {
+          margin: 0 0 15px 0; } }
     section.intro article hgroup {
       display: inline-block;
       vertical-align: baseline;
       zoom: 1;
       *display: inline;
       *vertical-align: auto;
-      vertical-align: middle; }
+      position: relative;
+      vertical-align: middle;
+      z-index: 1; }
+      @media screen and (max-width: 768px) {
+        section.intro article hgroup {
+          display: block; } }
       section.intro article hgroup h1 {
         font-size: 2.6em;
         letter-spacing: 2px;
         margin: 0; }
+        @media screen and (max-width: 480px) {
+          section.intro article hgroup h1 {
+            font-size: 2.2em; } }
       section.intro article hgroup h2 {
         color: #8c8c8c;
         font: italic 1.2em/1.4em Georgia, Cambria, "Times New Roman", Times, serif, "Time New Roman", "Playfair Display";
         letter-spacing: 1px;
         margin-left: 2px; }
+        @media screen and (max-width: 480px) {
+          section.intro article hgroup h2 {
+            font-size: 1em; } }
+      section.intro article hgroup a.gallery-link {
+        border-top: 12px solid #ff6666;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        *display: inline;
+        *vertical-align: auto;
+        margin-left: 3px;
+        position: relative;
+        top: 12px; }
+        section.intro article hgroup a.gallery-link:hover {
+          border-top-color: red;
+          top: 13px; }
+          section.intro article hgroup a.gallery-link:hover:before, section.intro article hgroup a.gallery-link:hover:after {
+            border-top-color: red;
+            border-right-color: red; }
+        section.intro article hgroup a.gallery-link:before, section.intro article hgroup a.gallery-link:after {
+          border-top: 5px solid #ff6666;
+          border-right: 5px solid #ff6666;
+          border-bottom: 5px solid transparent;
+          border-left: 5px solid transparent;
+          border-radius: 50%;
+          display: block;
+          left: -9px;
+          position: absolute;
+          top: -16px;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+        section.intro article hgroup a.gallery-link:after {
+          left: -1px; }
 
 header.global {
   border-bottom: 1px solid black;
@@ -439,7 +670,7 @@ section.gallery {
   margin-left: auto;
   margin-right: auto;
   margin: 0 auto;
-  padding: 140px 0px; }
+  padding: 140px 10px; }
   section.gallery:before, section.gallery:after {
     content: "";
     display: table; }
@@ -447,6 +678,12 @@ section.gallery {
     clear: both; }
   section.gallery article {
     margin-bottom: 140px; }
+    @media screen and (max-width: 768px) {
+      section.gallery article {
+        margin-bottom: 120px; } }
+    @media screen and (max-width: 480px) {
+      section.gallery article {
+        margin-bottom: 100px; } }
     section.gallery article figcaption {
       display: block;
       float: left;
@@ -457,6 +694,29 @@ section.gallery {
       margin-bottom: 60px; }
       section.gallery article figcaption:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.gallery article figcaption {
+          display: block;
+          float: left;
+          margin-right: 3.22581%;
+          width: 112.90323%;
+          margin-left: 12.90323%;
+          float: none; }
+          section.gallery article figcaption:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        section.gallery article figcaption {
+          zoom: 1;
+          max-width: 780px;
+          margin-left: auto;
+          margin-right: auto;
+          float: none;
+          margin-bottom: 40px; }
+          section.gallery article figcaption:before, section.gallery article figcaption:after {
+            content: "";
+            display: table; }
+          section.gallery article figcaption:after {
+            clear: both; } }
     section.gallery article div.image {
       border: 1px solid #b4b4b4;
       -webkit-box-sizing: border-box;
@@ -464,6 +724,12 @@ section.gallery {
       box-sizing: border-box;
       margin-bottom: 80px;
       padding: 1px; }
+      @media screen and (max-width: 768px) {
+        section.gallery article div.image {
+          margin-bottom: 60px; } }
+      @media screen and (max-width: 480px) {
+        section.gallery article div.image {
+          margin-bottom: 40px; } }
       section.gallery article div.image video {
         display: block;
         width: 100%; }

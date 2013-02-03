@@ -3,31 +3,53 @@ section.intro {
   border-bottom: 1px solid rgb(230,230,230);
   @include box-sizing(border-box);
   padding: 30vh 0px 0px;
-  height: 80vh;
+  height: 100vh;
 
   article {
     @include outer-container;
 
+    @include media($tablet) {
+      text-align: center;
+    }
+
     div.avatar {
+      //@extend %avatar-animation;
       background: url('/images/avatar.jpg');
       background-size: 100% 100%;
       background-repeat: no-repeat;
       border-radius: 50%;
       @include inline-block;
-      height: 130px;
+      height: 160px;
       margin-right: 20px;
-      width: 130px;
+      position: relative;
+      width: 160px;
       vertical-align: middle;
+      z-index: 2;
+
+      @include media($tablet) {
+        margin: 0 0 15px 0;
+      }
     }
 
     hgroup {
+      @extend %title-animation;
       @include inline-block;
+      position: relative;
       vertical-align: middle;
+      z-index: 1;
+
+      @include media($tablet) {
+        display: block;
+      }
 
       h1 {
         font-size: 2.6em;
         letter-spacing: 2px;
         margin: 0;
+
+        @include media($mobile) {
+          font-size: 2.2em;
+        }
       }
 
       h2 {
@@ -35,7 +57,53 @@ section.intro {
         font: italic 1.2em/1.4em $serif;
         letter-spacing: 1px;
         margin-left: 2px;
-        //text-transform: lowercase;
+
+        @include media($mobile) {
+          font-size: 1em;
+        }
+      }
+
+      a.gallery-link {
+        border: {
+          top: 12px solid lighten(red, 20%);
+          right: 10px solid transparent;
+          bottom: 10px solid transparent;
+          left: 10px solid transparent;
+        }
+        @include inline-block;
+        margin-left: 3px;
+        position: relative;
+        top: 12px;
+
+        &:hover {
+          border-top-color: red;
+          top: 13px;
+
+          &:before, &:after {
+            border-top-color: red;
+            border-right-color: red;
+          }
+        }
+
+        &:before, &:after {
+          border: {
+            top: 5px solid lighten(red,20%);
+            right: 5px solid lighten(red,20%);
+            bottom: 5px solid transparent;
+            left: 5px solid transparent;
+          }
+          border-radius: 50%;
+          //content: "";
+          display: block;
+          left: -9px;
+          position: absolute;
+          top: -16px;
+          @include transform(rotate(-45deg));
+        }
+
+        &:after {
+          left: -1px;
+        }
       }
     }
   }
@@ -44,7 +112,6 @@ section.intro {
 header.global {
   border-bottom: 1px solid rgb(0,0,0);
   background: rgba(0,0,0, 0.8);
-  //display: none;
   @include clearfix;
   padding: 12px 20px 10px;
 
@@ -85,16 +152,36 @@ header.global {
 section.gallery {
   @include outer-container;
   margin: 0 auto;
-  padding: 140px 0px;
+  padding: 140px 10px;
 
   article {
     margin-bottom: 140px;
+
+    @include media($tablet) {
+      margin-bottom: 120px;
+    }
+
+    @include media($mobile) {
+      margin-bottom: 100px;
+    }
 
     figcaption {
       @include span-columns(7);
       @include shift(1);
       float: none;
       margin-bottom: 60px;
+
+      @include media($tablet) {
+        @include span-columns(9);
+        @include shift(1);
+        float: none;
+      }
+
+      @include media($mobile) {
+        @include outer-container;
+        float: none;
+        margin-bottom: 40px;
+      }
     }
 
     div.image {
@@ -102,6 +189,14 @@ section.gallery {
       @include box-sizing(border-box);
       margin-bottom: 80px;
       padding: 1px;
+
+      @include media($tablet) {
+        margin-bottom: 60px;
+      }
+
+      @include media($mobile) {
+        margin-bottom: 40px;
+      }
 
       video {
         display: block;
