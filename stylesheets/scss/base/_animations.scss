@@ -4,151 +4,49 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////
 
-.title-animation {
-  @include animation(title 2.5s ease-in-out);
+
+%slide-up-animation {
+  @include animation(slide-up 0.5s linear);
   @include animation-fill-mode(both);
+  @include animation-delay(1.3s);
 }
 
-@mixin title-keyframes {
+@mixin slide-up-keyframes {
   0% {
     opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes title { @include title-keyframes; }
-   @-moz-keyframes title { @include title-keyframes; }
-    @-ms-keyframes title { @include title-keyframes; }
-     @-o-keyframes title { @include title-keyframes; }
-        @keyframes title { @include title-keyframes; }
-
-
-//
-///////////////////////////////////////////////////////////////////////////////////
-
-.title-fade-in-animation {
-  @include animation(title-fade-in 3.25s ease-in-out);
-  @include animation-fill-mode(both);
-}
-
-@mixin title-fade-in-keyframes {
-  0% {
-    opacity: 0;
-    @include transform(scale(0.97));
-  }
-  50% {
-    @include transform(scale(1));
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes title-fade-in { @include title-fade-in-keyframes; }
-   @-moz-keyframes title-fade-in { @include title-fade-in-keyframes; }
-    @-ms-keyframes title-fade-in { @include title-fade-in-keyframes; }
-     @-o-keyframes title-fade-in { @include title-fade-in-keyframes; }
-        @keyframes title-fade-in { @include title-fade-in-keyframes; }
-
-
-//
-///////////////////////////////////////////////////////////////////////////////////
-
-.intro-fade-in-animation {
-  @include animation(intro-fade-in 2s ease-in-out);
-  @include animation-fill-mode(both);
-  @include animation-delay(3.5s);
-}
-
-@mixin intro-fade-in-keyframes {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes intro-fade-in { @include intro-fade-in-keyframes; }
-   @-moz-keyframes intro-fade-in { @include intro-fade-in-keyframes; }
-    @-ms-keyframes intro-fade-in { @include intro-fade-in-keyframes; }
-     @-o-keyframes intro-fade-in { @include intro-fade-in-keyframes; }
-        @keyframes intro-fade-in { @include intro-fade-in-keyframes; }
-
-//
-///////////////////////////////////////////////////////////////////////////////////
-
-%avatar-animation {
-  @include animation(avatar 2s ease-in-out);
-  @include animation-fill-mode(both);
-}
-
-@mixin avatar-keyframes {
-  0% {
-    opacity: 0;
-    right: -100px
+    bottom: -35px
   }
   70% {
-    right: 0px
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    bottom: 0px
   }
 }
 
-@-webkit-keyframes avatar { @include avatar-keyframes; }
-   @-moz-keyframes avatar { @include avatar-keyframes; }
-    @-ms-keyframes avatar { @include avatar-keyframes; }
-     @-o-keyframes avatar { @include avatar-keyframes; }
-        @keyframes avatar { @include avatar-keyframes; }
+@-webkit-keyframes slide-up { @include slide-up-keyframes; }
+   @-moz-keyframes slide-up { @include slide-up-keyframes; }
+    @-ms-keyframes slide-up { @include slide-up-keyframes; }
+     @-o-keyframes slide-up { @include slide-up-keyframes; }
+        @keyframes slide-up { @include slide-up-keyframes; }
 
 
 //
 ///////////////////////////////////////////////////////////////////////////////////
 
-%title-down-animation {
-  @include animation(title-down 1s ease-in-out);
+%title-animation {
+  @include animation(title 1s ease-out);
   @include animation-fill-mode(both);
   @include animation-delay(0.25s);
 }
 
-@mixin title-down-keyframes {
+@mixin title-keyframes {
   0% {
     opacity: 0;
     top: -20px
   }
   70% {
     top: 0px
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes title-down { @include title-down-keyframes; }
-   @-moz-keyframes title-down { @include title-down-keyframes; }
-    @-ms-keyframes title-down { @include title-down-keyframes; }
-     @-o-keyframes title-down { @include title-down-keyframes; }
-        @keyframes title-down { @include title-down-keyframes; }
-
-//
-///////////////////////////////////////////////////////////////////////////////////
-
-%title-animation {
-  @include animation(title 1s ease-in-out);
-  @include animation-fill-mode(both);
-  @include animation-delay(0.25s);
-}
-
-@mixin title-keyframes {
-  0% {
-    opacity: 0;
-    left: -20px
-  }
-  70% {
-    left: 0px
   }
   100% {
     opacity: 1;
