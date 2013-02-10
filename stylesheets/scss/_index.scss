@@ -1,34 +1,53 @@
+html {
+  height: 100%;
+
+  body {
+    height: 100%;
+  }
+}
 section.intro {
+  background-image: url('/images/glow.jpg');
   background-color: rgb(250,250,250);
+  background-size: cover;
+  background-position: 50% 50%;
   @include box-sizing(border-box);
-  padding: 30vh 0px 0px;
+  padding: 25vh 0px 0px;
   position: relative;
   height: 100vh;
+
+  @include media($mobile) {
+    height: 100%;
+    padding: 70px 0px 100px;
+  }
 
   article {
     @extend %title-animation;
     position: relative;
     @include outer-container;
-
-    @include media($tablet) {
-      text-align: center;
-    }
+    text-align: center;
 
     div.avatar {
-      background: url('/images/avatar.jpg');
+      background: url('/images/avatar.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;
       border-radius: 50%;
+      border: 1px solid rgba(0,0,0, 0.2);
       @include inline-block;
       height: 160px;
-      margin-right: 20px;
+      margin-right: 15px;
+      opacity: 0.8;
       position: relative;
       width: 160px;
       vertical-align: middle;
       z-index: 2;
 
       @include media($tablet) {
-        margin: 0 0 15px 0;
+        margin: 0 0 20px 0;
+      }
+
+      @include media($mobile) {
+        height: 120px;
+        width: 120px;
       }
     }
 
@@ -43,23 +62,25 @@ section.intro {
       }
 
       h1 {
-        font-size: 2.6em;
+        color: rgba(0,0,0, 0.6);
+        font-size: 2.3em;
         letter-spacing: 2px;
         margin: 0;
 
         @include media($mobile) {
-          font-size: 2.2em;
+          font-size: 1.6em;
         }
       }
 
       h2 {
         color: $light-font-color;
-        font: italic 1.2em/1.4em $serif;
+        color: rgba(0,0,0, 0.4);
+        font: italic 1.35em/1.4em $serif;
         letter-spacing: 1px;
         margin-left: 2px;
 
         @include media($mobile) {
-          font-size: 1em;
+          font-size: 0.9em;
         }
       }
     }
@@ -144,6 +165,7 @@ header.global {
       float: none;
       @include inline-block;
       margin-bottom: 3px;
+      display: none;
     }
   }
 
@@ -164,6 +186,14 @@ section.gallery {
   @include outer-container;
   margin: 0 auto;
   padding: 140px 10px;
+
+  @include media($tablet) {
+    padding: 110px 10px;
+  }
+
+  @include media($mobile) {
+    padding: 80px 10px;
+  }
 
   article {
     margin-bottom: 140px;
@@ -189,7 +219,8 @@ section.gallery {
       }
 
       @include media($mobile) {
-        @include outer-container;
+        @include fill-parent;
+        @include shift(0);
         float: none;
         margin-bottom: 40px;
       }
