@@ -26,20 +26,27 @@ section.intro {
     @include outer-container;
     text-align: center;
 
-    div.avatar {
+    div.avatar-wrapper {
+      @include inline-block;
+      margin-right: 15px;
+      position: relative;
+    }
+
+    label.avatar {
       background: url('/images/avatar.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;
       border-radius: 50%;
       border: 1px solid rgba(0,0,0, 0.2);
+      cursor: pointer;
       @include inline-block;
       height: 160px;
-      margin-right: 15px;
       opacity: 0.8;
       position: relative;
       width: 160px;
       vertical-align: middle;
       z-index: 2;
+
 
       @include media($tablet) {
         margin: 0 0 20px 0;
@@ -48,6 +55,122 @@ section.intro {
       @include media($mobile) {
         height: 120px;
         width: 120px;
+      }
+    }
+
+    nav {
+      height: 0px;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      width: 0px;
+      z-index: 1;
+
+      > a {
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        border-radius: 50% 50%;
+        border: 2px solid transparent;
+        display: block;
+        height: 38px;
+        left: 50%;
+        margin-left: -19px;
+        margin-top: -19px;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        @include transition(all 0.2s ease-in);
+        width: 38px;
+
+        @include media($mobile) {
+          height: 32px;
+          width: 32px;
+          margin-left: -16px;
+          margin-top: -16px;
+        }
+
+        &.twitter {
+          background-image: url('/images/twitter.png');
+
+          &:hover {
+            background-color: rgb(29, 172, 237);
+            border-color: rgb(29, 172, 237);
+          }
+        }
+
+        &.github {
+          background-image: url('/images/github.png');
+
+          &:hover {
+            background-color: rgb(65, 131, 196);
+            border-color: rgb(65, 131, 196);
+          }
+        }
+
+        &.dribbble {
+          background-image: url('/images/dribbble.png');
+
+          &:hover {
+            background-color: rgb(234, 76, 137);
+            border-color: rgb(234, 76, 137);
+          }
+        }
+      }
+    }
+
+    input[type="checkbox"] {
+      display: none;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      visibility: hidden;
+      z-index: 1;
+    }
+
+    input[type="checkbox"]:checked + nav {
+      > a {
+        opacity: 1;
+        @include transform(rotate(1080deg));
+
+        &.twitter {
+          left: -120px;
+          top: -10px;
+        }
+
+        &.github {
+          left: -90px;
+          top: -90px;
+        }
+
+        &.dribbble {
+          left: -10px;
+          top: -120px;
+        }
+      }
+    }
+
+    @include media($mobile) {
+      input[type="checkbox"]:checked + nav {
+        > a {
+          opacity: 1;
+          @include transform(rotate(1080deg));
+
+          &.twitter {
+            left: -100px;
+            top: -10px;
+          }
+
+          &.github {
+            left: -80px;
+            top: -80px;
+          }
+
+          &.dribbble {
+            left: -10px;
+            top: -110px;
+          }
+        }
       }
     }
 
