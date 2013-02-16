@@ -1,6 +1,5 @@
 body {
   background: #fff;
-  border-top: 4px solid #ad141e;
   color: #555;
   font-size: 1em;
   font-family: $serif;
@@ -9,6 +8,46 @@ body {
 
 iframe#tumblr_controls, #disqus_thread #main-nav {
   display: none;
+}
+
+header {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  padding: 80px 10px 100px;
+
+  @include media($mobile) {
+    padding: 40px 10px 40px;
+  }
+
+  hgroup {
+    @include outer-container;
+    background: rgba(255,255,255,.8);
+    border: 1px solid rgba(255,255,255, 0.7);
+    border-bottom-color: rgba(255,255,255, 0.5);
+    border-radius: 20px;
+    @include box-shadow(0 3px 15px -5px rgba(0, 0, 0, 0.4));
+    margin-bottom: 0px;
+    padding: 20px 20px 30px;
+    text-align: center;
+
+    @include media($mobile) {
+      padding: 15px 15px 20px;
+    }
+
+    > h1 {
+      font: normal 3em/1.4em $sans-serif;
+      margin: 0;
+
+      @include media($tablet) {
+        font: normal 2.2em/1.4em $sans-serif;
+      }
+
+      @include media($mobile) {
+        font: normal 1.8em/1.4em $sans-serif;
+      }
+    }
+  }
 }
 
 section#container {
