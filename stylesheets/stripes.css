@@ -1,0 +1,73 @@
+/*
+Syntax error: Undefined mixin 'background'.
+        on line 23 of stylesheets/scss/stripes.scss, in `background'
+        from line 23 of stylesheets/scss/stripes.scss
+
+18:       orange 45%,
+19:       orange 50%,
+20:       red 50%,
+21:       red 55%,
+22:       pink 55%,
+23:       pink 60%));
+24:     position: absolute;
+25:     top: 0;
+26:     left: 0;
+27:     right: 0;
+28:     bottom: 0;
+
+Backtrace:
+stylesheets/scss/stripes.scss:23:in `background'
+stylesheets/scss/stripes.scss:23
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:251:in `visit_mixin'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:318:in `visit_rule'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:318:in `visit_rule'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/tree/root_node.rb:20:in `render'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/engine.rb:262:in `render'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:299:in `block in watch'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/Users/galenfrechette/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'background'.\A         on line 23 of stylesheets/scss/stripes.scss, in `background'\A         from line 23 of stylesheets/scss/stripes.scss\A \A 18:       orange 45%,\A 19:       orange 50%,\A 20:       red 50%,\A 21:       red 55%,\A 22:       pink 55%,\A 23:       pink 60%));\A 24:     position: absolute;\A 25:     top: 0;\A 26:     left: 0;\A 27:     right: 0;\A 28:     bottom: 0;"; }

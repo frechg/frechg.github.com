@@ -1,0 +1,59 @@
+section.evolve-wrapper {
+  header {
+    @include background(linear-gradient(top, rgba(255,255,255, 0.7), rgba(255,255,255, 0.8)));
+    border-bottom: 1px solid rgba(255,255,255, 0.8);
+    box-shadow: 0 1px 12px 0 rgba(0,0,0, 0.06);
+    left: 0px;
+    padding: 15px;
+    position: fixed;
+    right: 0px;
+    text-align: center;
+    top: 0px;
+
+    h1 {
+      color: rgba(0,0,0, 0.4);
+      margin: 0px;
+      text-shadow: 0 1px rgba(255,255,255, 0.4);
+    }
+  }
+
+  ul.blocks {
+    @include pad;
+    margin-top: 65px;
+
+    li {
+      background-image: url('/images/evolve.jpg');
+      background-position: 50% 50%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: 1px solid rgb(140,140,140);
+      border-radius: 2px;
+      margin-bottom: 34px;
+      padding: 2px;
+
+      @include media(min-width 1025px, 12) {
+        @include span-columns(3);
+        @include omega(4n);
+      }
+
+      @include media(min-width 769px max-width 1024px, 12) {
+        @include span-columns(4);
+        @include omega(3n);
+      }
+
+      @include media($tablet, 8) {
+        @include span-columns(4);
+        @include omega(2n);
+      }
+
+      @include media($mobile, 4) {
+        @include span-columns(4);
+        @include omega();
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

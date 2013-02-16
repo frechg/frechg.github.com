@@ -241,6 +241,8 @@ html {
   height: 100%; }
   html body {
     height: 100%; }
+    html body section#container {
+      height: 100%; }
 
 section.intro {
   background-image: url("/images/glow.jpg");
@@ -585,3 +587,109 @@ section.gallery {
           min-width: 100%;
           max-width: 100%;
           margin: 0px; }
+
+section.swiss-wrapper {
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 10px 40px -5px rgba(0, 0, 0, 0.08);
+  height: 600px;
+  margin: 90px auto;
+  position: relative;
+  width: 620px; }
+  section.swiss-wrapper header {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    height: 188px;
+    padding: 0.6em;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    text-align: right;
+    width: 200px;
+    z-index: 3; }
+    section.swiss-wrapper header h1 {
+      margin: 100px 0 0 0;
+      font-size: 4em; }
+  section.swiss-wrapper article.stripes {
+    background: -webkit-linear-gradient(-45deg, transparent 40%, yellow 40%, yellow 45%, orange 45%, orange 50%, red 50%, red 55%, pink 55%, pink 60%, transparent 60%);
+    background: -moz-linear-gradient(-45deg, transparent 40%, yellow 40%, yellow 45%, orange 45%, orange 50%, red 50%, red 55%, pink 55%, pink 60%, transparent 60%);
+    background: -ms-linear-gradient(-45deg, transparent 40%, yellow 40%, yellow 45%, orange 45%, orange 50%, red 50%, red 55%, pink 55%, pink 60%, transparent 60%);
+    background: -o-linear-gradient(-45deg, transparent 40%, yellow 40%, yellow 45%, orange 45%, orange 50%, red 50%, red 55%, pink 55%, pink 60%, transparent 60%);
+    background: linear-gradient(-45deg, transparent 40%, yellow 40%, yellow 45%, orange 45%, orange 50%, red 50%, red 55%, pink 55%, pink 60%, transparent 60%);
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    z-index: 2; }
+
+section.evolve-wrapper header {
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8));
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8));
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.06);
+  left: 0px;
+  padding: 15px;
+  position: fixed;
+  right: 0px;
+  text-align: center;
+  top: 0px; }
+  section.evolve-wrapper header h1 {
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.4); }
+section.evolve-wrapper ul.blocks {
+  padding: 2.12766%;
+  margin-top: 65px; }
+  section.evolve-wrapper ul.blocks li {
+    background-image: url("/images/evolve.jpg");
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+    margin-bottom: 34px;
+    padding: 2px; }
+    @media screen and (min-width: 1025px) {
+      section.evolve-wrapper ul.blocks li {
+        display: block;
+        float: left;
+        margin-right: 2.12766%;
+        width: 23.40426%; }
+        section.evolve-wrapper ul.blocks li:last-child {
+          margin-right: 0; }
+        section.evolve-wrapper ul.blocks li:nth-child(4n) {
+          margin-right: 0; } }
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      section.evolve-wrapper ul.blocks li {
+        display: block;
+        float: left;
+        margin-right: 2.12766%;
+        width: 31.91489%; }
+        section.evolve-wrapper ul.blocks li:last-child {
+          margin-right: 0; }
+        section.evolve-wrapper ul.blocks li:nth-child(3n) {
+          margin-right: 0; } }
+    @media screen and (max-width: 768px) {
+      section.evolve-wrapper ul.blocks li {
+        display: block;
+        float: left;
+        margin-right: 3.22581%;
+        width: 48.3871%; }
+        section.evolve-wrapper ul.blocks li:last-child {
+          margin-right: 0; }
+        section.evolve-wrapper ul.blocks li:nth-child(2n) {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      section.evolve-wrapper ul.blocks li {
+        display: block;
+        float: left;
+        margin-right: 6.66667%;
+        width: 100%;
+        margin-right: 0; }
+        section.evolve-wrapper ul.blocks li:last-child {
+          margin-right: 0; } }
+    section.evolve-wrapper ul.blocks li img {
+      max-width: 100%; }

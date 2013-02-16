@@ -1,0 +1,46 @@
+section.swiss-wrapper {
+  border: 1px solid rgb(230,230,230);
+  box-shadow: 0 10px 40px -5px rgba(0,0,0, 0.08);
+  height: 600px;
+  margin: 90px auto;
+  position: relative;
+  width: 620px;
+
+  header {
+    background: #fff;
+    border: 1px solid rgb(240,240,240);
+    height: 188px;
+    padding: 0.6em;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    text-align: right;
+    width: 200px;
+    z-index: 3;
+
+    h1 {
+      margin: 100px 0 0 0;
+      font-size: 4em;
+    }
+  }
+
+  article.stripes {
+    @include background(linear-gradient(-45deg,
+      transparent 40%,
+      yellow 40%,
+      yellow 45%,
+      orange 45%,
+      orange 50%,
+      red 50%,
+      red 55%,
+      pink 55%,
+      pink 60%,
+      transparent 60%));
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,30 @@
+section.swiss-wrapper {
+  height: 100%;
+  padding: 3em;
+  position: relative;
+  width: 100%;
+
+  header {
+    background: #fff;
+
+    h1 {
+    }
+  }
+
+  article.stripes {
+    @include background(linear-gradient(top,
+      yellow 40%,
+      yellow 45%,
+      orange 45%,
+      orange 50%,
+      red 50%,
+      red 55%,
+      pink 55%,
+      pink 60%));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
