@@ -6,11 +6,7 @@ body {
   line-height: lh();
 }
 
-iframe#tumblr_controls, #disqus_thread #main-nav {
-  display: none;
-}
-
-header {
+header.hero {
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -604,32 +600,6 @@ footer {
           }
         }
       }
-    }
-  }
-}
-
-a {
-  &#twitter {
-    background: url('/images/twitter.svg') -8px -1px no-repeat;
-
-    &:hover {
-      background-position: -8px -48px;
-    }
-  }
-
-  &#contact {
-    background: url('/images/contact.svg') 0 -1px no-repeat;
-
-    &:hover {
-      background-position: 0 -47px;
-    }
-  }
-
-  &#rss {
-    background: url('/images/rss.svg') 0px 0px no-repeat;
-
-    &:hover {
-      background-position: 0px -47px;
     }
   }
 }
