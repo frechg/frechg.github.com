@@ -3,163 +3,17 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-@-webkit-keyframes slide-up {
-  0% {
-    opacity: 0;
-    bottom: -35px; }
-
-  70% {
-    opacity: 1; }
-
-  100% {
-    bottom: 0px; } }
-
-@-moz-keyframes slide-up {
-  0% {
-    opacity: 0;
-    bottom: -35px; }
-
-  70% {
-    opacity: 1; }
-
-  100% {
-    bottom: 0px; } }
-
-@-ms-keyframes slide-up {
-  0% {
-    opacity: 0;
-    bottom: -35px; }
-
-  70% {
-    opacity: 1; }
-
-  100% {
-    bottom: 0px; } }
-
-@-o-keyframes slide-up {
-  0% {
-    opacity: 0;
-    bottom: -35px; }
-
-  70% {
-    opacity: 1; }
-
-  100% {
-    bottom: 0px; } }
-
-@keyframes slide-up {
-  0% {
-    opacity: 0;
-    bottom: -35px; }
-
-  70% {
-    opacity: 1; }
-
-  100% {
-    bottom: 0px; } }
-
-@-webkit-keyframes title {
-  0% {
-    opacity: 0;
-    top: -20px; }
-
-  70% {
-    top: 0px; }
-
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes title {
-  0% {
-    opacity: 0;
-    top: -20px; }
-
-  70% {
-    top: 0px; }
-
-  100% {
-    opacity: 1; } }
-
-@-ms-keyframes title {
-  0% {
-    opacity: 0;
-    top: -20px; }
-
-  70% {
-    top: 0px; }
-
-  100% {
-    opacity: 1; } }
-
-@-o-keyframes title {
-  0% {
-    opacity: 0;
-    top: -20px; }
-
-  70% {
-    top: 0px; }
-
-  100% {
-    opacity: 1; } }
-
-@keyframes title {
-  0% {
-    opacity: 0;
-    top: -20px; }
-
-  70% {
-    top: 0px; }
-
-  100% {
-    opacity: 1; } }
-
-html, body {
-  min-height: 100%; }
-
-body {
-  color: #505050;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 100%;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased; }
-
-h1 {
-  font: bold 1.6em/1.2em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  text-transform: uppercase; }
-
-p {
-  font: 300 1.2em/1.5em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #8c8c8c; }
-  p a {
-    font: 300 1em/1.5em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-p + p {
-  margin-top: 12px; }
-
-a {
-  border-bottom: 1px dotted transparent;
-  color: #529ae7;
-  font: 300 1.2em/1.5em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding-bottom: 2px;
-  text-decoration: none;
-  -webkit-transition: all, 0.15s, linear;
-  -moz-transition: all, 0.15s, linear;
-  -ms-transition: all, 0.15s, linear;
-  -o-transition: all, 0.15s, linear;
-  transition: all, 0.15s, linear; }
-  a:hover {
-    border-color: #529ae7;
-    color: #1a67b9; }
-
+/*thoughtbot red*/
+/*line-height of all the type on the site*/
+/*one grid column*/
+/*size of one gutter*/
 body {
   background: #fff;
   border-top: 4px solid #ad141e;
   color: #555;
   font-size: 1em;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif, "Time New Roman", "Playfair Display";
-  line-height: lh(); }
+  font-family: "skolar-1", "skolar-2", Georgia, serif;
+  line-height: 1.6rem; }
 
 iframe#tumblr_controls, #disqus_thread #main-nav {
   display: none; }
@@ -168,7 +22,7 @@ section#container {
   zoom: 1;
   width: 100%;
   margin: 0 auto;
-  padding: lh() 10px lh(); }
+  padding: 1.6rem 10px 1.6rem; }
   section#container:before, section#container:after {
     content: "";
     display: table; }
@@ -176,8 +30,8 @@ section#container {
     clear: both; }
   section#container header {
     zoom: 1;
-    margin: lh(2) 0 lh() 0;
-    padding: 0 0 lh(2) 0; }
+    margin: 3.2rem 0 1.6rem 0;
+    padding: 0 0 3.2rem 0; }
     section#container header:before, section#container header:after {
       content: "";
       display: table; }
@@ -188,7 +42,7 @@ section#container {
     section#container header hgroup {
       text-align: center; }
       section#container header hgroup h2 {
-        font: 700 1em/1.4em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font: 700 1em/1.4em "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 0 0 6px 0;
         text-transform: uppercase;
         letter-spacing: 1px; }
@@ -197,10 +51,10 @@ section#container {
           font-weight: 700;
           text-decoration: none; }
           section#container header hgroup h2 a:hover {
-            color: red; }
+            color: #ad141e; }
       section#container header hgroup h3 {
         color: #999;
-        font: 400 0.9em/1em Georgia, Cambria, "Times New Roman", Times, serif, "Time New Roman", "Playfair Display";
+        font: 400 0.9em/1em "skolar-1", "skolar-2", Georgia, serif;
         font-style: italic;
         -webkit-font-smoothing: antialiased; }
         section#container header hgroup h3 a {
@@ -211,12 +65,12 @@ section#container {
             text-decoration: underline; }
   section#container section#posts .post {
     width: 100%;
-    margin: 0 0 lh(2) 0;
-    padding: 0 20px lh(2) 20px; }
+    margin: 0 0 3.2rem 0;
+    padding: 0 20px 3.2rem 20px; }
     section#container section#posts .post .meta-info {
       text-align: center; }
       section#container section#posts .post .meta-info p.post-date {
-        margin: 0 auto lh() auto;
+        margin: 0 auto 1.6rem auto;
         font-size: 0.875em; }
         section#container section#posts .post .meta-info p.post-date:before {
           content: '\2014';
@@ -238,16 +92,16 @@ section#container {
           color: #aaa;
           font-weight: 400; }
           section#container section#posts .post .meta-info p.post-date a:hover {
-            color: red;
+            color: #ad141e;
             text-decoration: none; }
       section#container section#posts .post .meta-info p.author {
         display: none; }
       section#container section#posts .post .meta-info p.tagged {
         display: none;
         font-size: 0.85714em;
-        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         text-transform: uppercase;
-        margin-bottom: lh(0.5); }
+        margin-bottom: 0.8rem; }
         section#container section#posts .post .meta-info p.tagged a {
           font-style: normal; }
       section#container section#posts .post .meta-info a {
@@ -256,35 +110,35 @@ section#container {
         font-style: italic;
         text-decoration: none; }
         section#container section#posts .post .meta-info a:hover {
-          color: red;
+          color: #ad141e;
           text-decoration: none; }
       section#container section#posts .post .meta-info ul.tags {
         display: none;
         color: #777;
         font-size: 0.85714em;
-        margin: 0 0 lh(1.5) 0; }
+        margin: 0 0 2.4rem 0; }
       section#container section#posts .post .meta-info p.comments {
         display: none; }
     section#container section#posts .post h2 {
       color: #111;
       font-size: 1.14286em;
       font-weight: 700;
-      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      margin: lh(2) 0 0 0;
+      font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+      margin: 3.2rem 0 0 0;
       text-transform: uppercase;
       letter-spacing: 1px; }
     section#container section#posts .post h3 {
       font-size: 1.14286em;
-      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      margin: lh(2) 0 0 0;
+      font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+      margin: 3.2rem 0 0 0;
       color: #333;
-      margin: lh() 0 0 0; }
+      margin: 1.6rem 0 0 0; }
     section#container section#posts .post h4 {
       color: #333;
       font-style: italic;
-      margin: lh() 0 0px 0; }
+      margin: 1.6rem 0 0px 0; }
     section#container section#posts .post p {
-      margin: 0 0 lh() 0; }
+      margin: 0 0 1.6rem 0; }
     section#container section#posts .post blockquote {
       color: #555;
       font-style: italic;
@@ -294,7 +148,7 @@ section#container {
         color: #555;
         font-style: italic; }
     section#container section#posts .post ul {
-      margin: 0 0 lh() 0; }
+      margin: 0 0 1.6rem 0; }
       section#container section#posts .post ul li {
         margin: 0 0 4px 0;
         position: relative; }
@@ -306,7 +160,7 @@ section#container {
           position: absolute;
           top: -2px; }
     section#container section#posts .post ol {
-      margin: 0 0 lh() 0; }
+      margin: 0 0 1.6rem 0; }
       section#container section#posts .post ol li {
         list-style: outside;
         list-style-type: decimal;
@@ -319,7 +173,7 @@ section#container {
       margin-right: auto;
       max-width: 100%; }
     section#container section#posts .post a {
-      color: red;
+      color: #ad141e;
       font-weight: 700;
       text-decoration: none; }
       section#container section#posts .post a:hover {
@@ -356,10 +210,10 @@ section#container {
           content: '\2014'; }
       section#container section#posts .post section.post-footer p.comments {
         float: right;
-        font: 400 14px/14px "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+        font: 400 14px/14px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
       section#container section#posts .post section.post-footer .plus-one {
         float: right;
-        font: 400 14px/14px Georgia, Cambria, "Times New Roman", Times, serif, "Time New Roman", "Playfair Display"; }
+        font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif; }
       section#container section#posts .post section.post-footer div.tags {
         clear: both;
         display: block;
@@ -370,7 +224,7 @@ section#container {
           display: inline-block; }
           section#container section#posts .post section.post-footer div.tags ul li {
             display: inline-block;
-            font: 400 13px/14px Georgia, Cambria, "Times New Roman", Times, serif, "Time New Roman", "Playfair Display";
+            font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
             font-style: italic;
             line-height: 1.5em;
             list-style: none;
@@ -392,7 +246,7 @@ section#container {
               section#container section#posts .post section.post-footer div.tags ul li:first-child:after {
                 content: 'Learn more:';
                 font-size: 0.85714em;
-                font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
                 font-weight: 400;
                 left: 0;
                 top: 0; }
@@ -401,11 +255,11 @@ section#container {
               font-weight: normal;
               text-decoration: none; }
     section#container section#posts .post h1.title {
-      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       font-size: 2.25em;
       font-weight: 300;
-      line-height: lh(1.5);
-      margin: 0 0 lh() 0;
+      line-height: 2.4rem;
+      margin: 0 0 1.6rem 0;
       text-align: center;
       text-transform: none;
       -webkit-font-smoothing: antialiased;
@@ -415,7 +269,7 @@ section#container {
         font-weight: 300;
         text-decoration: none; }
         section#container section#posts .post h1.title a:hover {
-          color: red; }
+          color: #ad141e; }
     section#container section#posts .post.photo .meta-info, section#container section#posts .post.video .meta-info {
       top: 0px; }
     section#container section#posts .post.photo .caption, section#container section#posts .post.video .caption {
@@ -456,7 +310,7 @@ section#container {
       position: relative; }
     section#container section#posts .post.quote.medium q, section#container section#posts .post.quote.long q {
       font-size: 1.28571em;
-      font-family: Georgia, Cambria, "Times New Roman", Times, serif, "Time New Roman", "Playfair Display"; }
+      font-family: "skolar-1", "skolar-2", Georgia, serif; }
     section#container section#posts .post.quote .post-footer p.comments {
       padding-bottom: 0px;
       position: relative;
@@ -476,7 +330,7 @@ section#container {
   color: #444;
   font-weight: 700;
   font-size: 1em;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
   padding: 6px 9px;
   text-decoration: none;
   text-transform: uppercase; }
@@ -515,11 +369,11 @@ footer {
       clear: both; }
     footer section#footer-container section.etc {
       display: block;
-      margin-bottom: lh(); }
+      margin-bottom: 1.6rem; }
       footer section#footer-container section.etc p {
         color: #777; }
         footer section#footer-container section.etc p a {
-          color: red;
+          color: #ad141e;
           text-decoration: none; }
           footer section#footer-container section.etc p a:hover {
             text-decoration: underline; }
@@ -567,3 +421,138 @@ a#rss {
   background: url("/images/rss.svg") 0px 0px no-repeat; }
   a#rss:hover {
     background-position: 0px -47px; }
+
+@media only screen and (min-width: 760px) {
+  body {
+    font-size: 1.125em;
+    line-height: 1.92rem; }
+
+  section#container {
+    margin-bottom: -20px;
+    width: 740px; }
+    section#container header {
+      margin: 3.2rem 0; }
+      section#container header h2.logo {
+        float: left;
+        text-align: left;
+        width: 145px; }
+        section#container header h2.logo a {
+          margin: 15px 0 0 30px;
+          display: block; }
+      section#container header hgroup {
+        float: left;
+        text-align: left;
+        padding: 2.4rem 0 0 25px; }
+    section#container section#posts .post {
+      margin: 0 0 4.8rem 0;
+      padding: 0 0 4.8rem 170px;
+      position: relative; }
+      section#container section#posts .post:only-of-type {
+        border-bottom: 0; }
+      section#container section#posts .post .meta-info {
+        left: 10px;
+        text-align: left;
+        position: absolute;
+        top: 18px;
+        width: 145px;
+        opacity: .5;
+        -webkit-transition: all 0.15s ease-out 0;
+        -moz-transition: all 0.15s ease-out 0;
+        -ms-transition: all 0.15s ease-out 0;
+        -o-transition: all 0.15s ease-out 0;
+        transition: all 0.15s ease-out 0; }
+        section#container section#posts .post .meta-info:hover {
+          opacity: 1; }
+        section#container section#posts .post .meta-info p.post-date {
+          border-bottom: none;
+          margin: 0 0 1.6rem 0;
+          padding: 0;
+          width: 100%; }
+          section#container section#posts .post .meta-info p.post-date:before, section#container section#posts .post .meta-info p.post-date:after {
+            content: normal; }
+          section#container section#posts .post .meta-info p.post-date a {
+            color: #333; }
+        section#container section#posts .post .meta-info p.author {
+          display: block;
+          font-size: 0.875em;
+          position: relative; }
+          section#container section#posts .post .meta-info p.author:before {
+            position: absolute;
+            left: -1.5em;
+            content: 'by';
+            display: inline;
+            font-size: 0.71429em;
+            font-style: italic;
+            opacity: .4;
+            padding-right: .5em; }
+        section#container section#posts .post .meta-info p.tagged {
+          display: block; }
+        section#container section#posts .post .meta-info ul.tags {
+          display: block; }
+          section#container section#posts .post .meta-info ul.tags li {
+            margin: 0 0 0.4rem 0;
+            position: relative; }
+            section#container section#posts .post .meta-info ul.tags li:after {
+              content: "\2014";
+              font-size: 13px;
+              left: -14px;
+              position: absolute;
+              top: 0; }
+        section#container section#posts .post .meta-info p.comments {
+          display: block; }
+      section#container section#posts .post img {
+        display: inline-block; }
+      section#container section#posts .post table {
+        width: 570px; }
+      section#container section#posts .post section.post-footer {
+        display: none; }
+      section#container section#posts .post h1.title {
+        text-align: left; }
+
+  #pagination {
+    padding: 0 0 1.6rem 170px; }
+
+  #pagination #older-link a {
+    width: 145px;
+    background-position: 0 13px; }
+
+  #pagination #newer-link a {
+    width: 145px;
+    background-position: right -15px; }
+
+  footer section#footer-container {
+    width: 723px; }
+    footer section#footer-container section.etc {
+      margin: 0;
+      float: left;
+      width: 65%; } }
+@media only screen and (min-width: 1025px) {
+  section#container {
+    padding: 20px 0 0;
+    width: 995px; }
+    section#container header h2.logo a {
+      height: 85px;
+      width: 85px; }
+    section#container header nav {
+      margin: 0 0 0 25px;
+      padding: 35px 0 0 0;
+      width: 230px; }
+      section#container header nav ul {
+        margin-top: 0; }
+        section#container header nav ul li {
+          width: 42px; }
+    section#container section#posts .post img {
+      max-width: 570px;
+      margin-bottom: 10px; }
+    section#container section#posts .post.photo .post-footer p.comments, section#container section#posts .post.video .post-footer p.comments {
+      padding-bottom: 0px;
+      position: relative;
+      top: -30px; }
+
+  #pagination {
+    padding-bottom: 30px; }
+
+  footer {
+    padding: 40px 20px 60px; }
+    footer section#footer-container {
+      width: 995px; } }
