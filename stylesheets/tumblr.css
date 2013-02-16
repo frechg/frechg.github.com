@@ -9,14 +9,50 @@
 /*size of one gutter*/
 body {
   background: #fff;
-  border-top: 4px solid #ad141e;
   color: #555;
   font-size: 1em;
   font-family: "skolar-1", "skolar-2", Georgia, serif;
   line-height: 1.6rem; }
 
-iframe#tumblr_controls, #disqus_thread #main-nav {
-  display: none; }
+header.hero {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  padding: 80px 10px 100px; }
+  @media screen and (max-width: 480px) {
+    header.hero {
+      padding: 40px 10px 40px; } }
+  header.hero hgroup {
+    zoom: 1;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    -webkit-box-shadow: 0 3px 15px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 15px -5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0px;
+    padding: 20px 20px 30px;
+    text-align: center; }
+    header.hero hgroup:before, header.hero hgroup:after {
+      content: "";
+      display: table; }
+    header.hero hgroup:after {
+      clear: both; }
+    @media screen and (max-width: 480px) {
+      header.hero hgroup {
+        padding: 15px 15px 20px; } }
+    header.hero hgroup > h1 {
+      font: normal 3em/1.4em "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+      margin: 0; }
+      @media screen and (max-width: 768px) {
+        header.hero hgroup > h1 {
+          font: normal 2.2em/1.4em "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; } }
+      @media screen and (max-width: 480px) {
+        header.hero hgroup > h1 {
+          font: normal 1.8em/1.4em "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; } }
 
 section#container {
   zoom: 1;
@@ -408,19 +444,6 @@ footer {
               -o-transition: 0.5s;
               transition: 0.5s;
               width: 42px; }
-
-a#twitter {
-  background: url("/images/twitter.svg") -8px -1px no-repeat; }
-  a#twitter:hover {
-    background-position: -8px -48px; }
-a#contact {
-  background: url("/images/contact.svg") 0 -1px no-repeat; }
-  a#contact:hover {
-    background-position: 0 -47px; }
-a#rss {
-  background: url("/images/rss.svg") 0px 0px no-repeat; }
-  a#rss:hover {
-    background-position: 0px -47px; }
 
 @media only screen and (min-width: 760px) {
   body {
